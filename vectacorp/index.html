@@ -13,7 +13,20 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script>
 	$(document).ready(function(){
-		$(document).tooltip();
+		// STEP 1 GENERAL TOOLTIP
+		$(function () {
+			$("#responsive-menu").tooltip();
+			});
+		// STEP 2 HOMEPAGE TABS
+		$(function () {
+				$("#tabs").tabs();
+			});
+		// STEP 2 HOMEPAGE ACCORDION
+		$(function () {
+				$("#accordion").accordion();
+			});
+
+			
 
 	}); // closing for document ready DO NOT DELETE!!
 	</script>
