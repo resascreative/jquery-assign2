@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-	<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<!-- jquery ui  -->
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -20,24 +20,24 @@
 			$("#responsive-menu").tooltip();
 			});
 		// STEP 2 HOMEPAGE TABS
-		$(function () {
-				$("#tabs").tabs();
-			});
+		$( function() {
+   			 $( "#tabs" ).tabs();
+ 	 		} );
 		// STEP 3 HOMEPAGE ACCORDION
 		$(function () {
 				$("#accordion").accordion();
 			});
 
-		}); // closing for document ready DO NOT DELETE!!
+		}); // closing document ready DO NOT DELETE!!
 	</script>
 	
-	<script src="js/jquery.mobilemenu.js"></script>
+	<!-- <script src="js/jquery.mobilemenu.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('#responsive-menu').mobileMenu();
 			
 		});
-	</script>
+	</script> -->
 	  <!-- <script>
 		$( function() {
 		  $( "#tabs" ).tabs();
@@ -74,7 +74,7 @@
 		<section id="solutions tabs" class="six columns">
 			<h4>Our Solutions</h4> 
 			<!-- STEP 2 HOMEPAGE TABS -->
-			<div id="tabs"></div> 
+			<div id="tabs"> 
 			<ul>
 				<li><a href="#tabs-1">vProspect 2.0</a></li>
 				<li><a href="#tabs-2">vConvert 2.0</a></li>
@@ -85,31 +85,44 @@
 				<img src="vectacorp\images\logo_vprospect.gif" alt="vProspect logo">
 				<p>Define and research your target audience, define your strategy to reach that audience and present a strong and memorable brand to that audience.</p>
 			</div> 
-		
-			<br>
-
-			Back to top <br>
 
 			<div id="tabs-2">
 				<img src="vectacorp\images\logo_vconvert.gif" alt="vConvert logo">
 				<p>Create a highly user-friendly and easy-to-navigate information architecture that will help your prospects interact with the company on a highly interactive level.</p>
 			</div>
 
-			Back to top
-
 			<div id="tabs-3">
 				<img src="vectacorp\images\logo_vretain.gif" alt="vRetain logo">
 				<p>Build on existing customer relationships to improve productivity and maximize customer loyalty, while growing revenues.</p>
 			</div>
-
-			Back to top
-			<!-- INSERT TABS HERE -->
+		</div>
+			<!-- Back to top
+			INSERT TABS HERE -->
 		</section>
 		
 		<section id="testimonials" class="five columns">
 			<h4>Client Testimonials</h4>
 
 			<!-- INSERT ACCORDION HERE -->
+			<div id="accordion">
+				<h3>Chevy Dealers Assc</h3>
+				<div>
+					<p>Throughout the years we have worked with Vecta Corporation, we have always been amazed at the level of dedication and professionalism that they have provided us and our WGDC products. It is this commitment that has increased both our income and exposure exponentially.</p>
+					<p>Iona Ford<br>
+					President<br>
+					Chevy Dealers Association
+					</p>
+				</div>
+				<h3>Profits Financial, Inc</h3>
+				<div>
+					<p>Incredible results from an incredible effort by the Vecta Corporation team! We are very pleased with the business benefits we have rceived by working with them.</p>
+					<p>Robin Banks<br>
+					CEO<br>
+					Profits Financial, Inc.
+					</p>
+				</div>
+			</div>
+	
 			
 		</section>
 	</main>
